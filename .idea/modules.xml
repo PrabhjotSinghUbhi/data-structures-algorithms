@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lectures/07-methods/07-methods.iml" filepath="$PROJECT_DIR$/lectures/07-methods/07-methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lectures/08-arrays/08-arrays.iml" filepath="$PROJECT_DIR$/lectures/08-arrays/08-arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/data-structures-algorithms.iml" filepath="$PROJECT_DIR$/.idea/data-structures-algorithms.iml" />
+    </modules>
+  </component>
+</project>
