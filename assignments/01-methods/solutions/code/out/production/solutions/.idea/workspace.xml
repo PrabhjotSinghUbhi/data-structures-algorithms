@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b02cec12-d6d4-4d8f-8a27-eed2eb109ac9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PrabhjotSinghUbhi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PrabhjotSinghUbhi/data-structures-algorithms.git&quot;,
+    &quot;accountId&quot;: &quot;0b94e2d0-bc58-4402-b24f-fced1c89a648&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2phe4ikKIk1Q3afVo6cgOfijRrW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Answer_1.executor": "Run",
+    "Application.Answer_11.executor": "Run",
+    "Application.Answer_12.executor": "Run",
+    "Application.Answer_13.executor": "Run",
+    "Application.Answer_14.executor": "Run",
+    "Application.Answer_2.executor": "Run",
+    "Application.Answer_4.executor": "Run",
+    "Application.Answer_5.executor": "Run",
+    "Application.Answer_6.executor": "Run",
+    "Application.Answer_7.executor": "Run",
+    "Application.Answer_8.executor": "Run",
+    "Application.Answer_9.executor": "Run",
+    "Application.Anwer_3.executor": "Run",
+    "Application.pallindrome.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ASUS/Desktop/data-structures-algorithms/assignments/01-methods/solutions",
+    "settings.editor.selected.configurable": "fileTemplates"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b02cec12-d6d4-4d8f-8a27-eed2eb109ac9" name="Changes" comment="" />
+      <created>1733222544692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733222544692</updated>
+    </task>
+    <servers />
+  </component>
+</project>
