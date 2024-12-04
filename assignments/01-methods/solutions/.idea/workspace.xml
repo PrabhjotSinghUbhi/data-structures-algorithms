@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b02cec12-d6d4-4d8f-8a27-eed2eb109ac9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/solutions.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../lectures/08-arrays" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lectures/08-arrays" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../lectures/08-arrays/code/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lectures/08-arrays/code/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,30 +47,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Answer_1.executor": "Run",
-    "Application.Answer_11.executor": "Run",
-    "Application.Answer_12.executor": "Run",
-    "Application.Answer_13.executor": "Run",
-    "Application.Answer_14.executor": "Run",
-    "Application.Answer_2.executor": "Run",
-    "Application.Answer_4.executor": "Run",
-    "Application.Answer_5.executor": "Run",
-    "Application.Answer_6.executor": "Run",
-    "Application.Answer_7.executor": "Run",
-    "Application.Answer_8.executor": "Run",
-    "Application.Answer_9.executor": "Run",
-    "Application.Anwer_3.executor": "Run",
-    "Application.pallindrome.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/Desktop/data-structures-algorithms/lectures/08-arrays",
-    "settings.editor.selected.configurable": "editing.templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Answer_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_11.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_12.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_13.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_14.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_7.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_8.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Answer_9.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Anwer_3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.pallindrome.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/data-structures-algorithms/lectures/08-arrays&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="solutions" />
