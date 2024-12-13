@@ -1,0 +1,4 @@
+Binary Search only works for a sorted array.
+weather it may be ascending or descending.
+its time complexity is O(1) in best case
+in worst case it is log(n).
