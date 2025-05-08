@@ -3,7 +3,7 @@ package com.prabhjot.dsa.algorithms.searching.binary_search;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class BinarySearchTest {
+class BinarySearchTest {
     @Test
     void testBinarySearchElementFound() {
         BinarySearch bSearch = new BinarySearch();
