@@ -36,3 +36,6 @@ Thumbs.db
 
 # Ignore dependency directories
 /node_modules/
+
+#ignore exe files
+/*.exe

@@ -22,10 +22,10 @@ Welcome to the **Data Structures and Algorithms** repository! 🎉 This is your 
 We love contributions! ❤️ Whether it's fixing a bug, adding a new feature, or improving documentation, your help is always welcome. Check out our [CONTRIBUTING.md](CONTRIBUTING.md) guide to get started.
 
 ## 👤 Author
-- **Name**: [Prabhjot Singh Ubhi](https://github.com/PrabhjotSinghUbhi)
+- **Prabhjot Singh**: [Prabhjot Singh Ubhi](https://github.com/PrabhjotSinghUbhi)
 - **GitHub**: [https://github.com/PrabhjotSinghUbhi](https://github.com/PrabhjotSinghUbhi)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-linkedin-profile)
-- **Twitter**: [@your-twitter-handle](https://twitter.com/your-twitter-handle)
+- **LinkedIn**: [Prabhjot Singh](https://www.linkedin.com/in/prabhjot-singh-0a7780306)
+- **Twitter**: [@prabh_018](https://x.com/prabh_018)
 
 ## 📜 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
