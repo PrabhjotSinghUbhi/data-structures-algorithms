@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 
 /**
  * A class representing a singly linked list data structure.
- * Provides methods for insertion, deletion, and searching of elements.
+ * Provides methods for insertion, deletion, searching, and other operations.
  */
 public class LinkedList {
 
@@ -222,15 +222,31 @@ public class LinkedList {
         return -1; // Value not found
     }
 
-   public void reverse() {
-    Node prev;
-    Node next;
-    Node current;
-   }
+    /**
+     * Reverses the linked list in place.
+     */
+    public void reverse() {
+        Node prev = null;
+        Node next;
+        Node current = head;
 
+        while (current != null) {
+            next = current.next; // Store the next node
+            current.next = prev; // Reverse the link
+            prev = current; // Move prev to the current node
+            current = next; // Move current to the next node
+        }
+
+        tail = head; // Update the tail to the old head
+        head = prev; // Update the head to the new head
+    }
+
+    /**
+     * Checks if the linked list is empty.
+     * 
+     * @return True if the list is empty, false otherwise.
+     */
     public boolean isEmpty() {
         return size == 0;
     }
-
-    
 }
