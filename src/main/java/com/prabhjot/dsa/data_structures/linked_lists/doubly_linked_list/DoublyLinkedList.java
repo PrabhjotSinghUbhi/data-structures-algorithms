@@ -14,32 +14,90 @@ public class DoublyLinkedList {
 
     private Node head;
     private Node tail;
+    private int size;
 
     public void insertAtFirst(int val) {
 
         Node node = new Node(val);
 
+        if (head == null) {
+            head = tail = node;
+            return;
+        }
+
         node.prev = null;
         node.next = head;
 
-        if(head != null) head.prev = node;
+        head.prev = node;
 
         head = node;
+        size++;
 
     }
 
     public void display() {
         Node temp = head;
+
         System.out.print("head -> ");
         while (temp != null) {
             System.out.print(temp.val + " -> ");
             temp = temp.next;
         }
         System.out.println("tail");
+
+        // Node temp2 = tail;
+        // System.out.println("Printing in reverse.");
+
+        // System.out.print("Head -> ");
+        // while (temp2 != null) {
+        // System.out.print(temp2.val + " -> ");
+        // temp2 = temp2.prev;
+        // }
+        // System.out.println("Tail");
+
     }
 
     public void insertAtLast(int val) {
         Node node = new Node(val);
+
+        if (head == null) {
+            insertAtFirst(val);
+            return;
+        }
+
+        tail.next = node;
+
+        node.prev = tail;
+        node.next = null;
+
+        tail = node;
+        size++;
+
+    }
+
+    public void insertAt(int val, int pos) {
+        if (pos < 0 || pos > size) {
+
+        } else if (pos == 0) {
+            insertAtFirst(val);
+        } else if (pos == size) {
+            insertAtLast(val);
+        } else {
+            Node node = new Node(val);
+
+            Node temp = head;
+            for (int i = 0; i < pos - 1; i++) {
+                temp = temp.next;
+            }
+
+            node.next = temp.next;
+            temp.next = node;
+
+            node.prev = temp;
+
+            temp = temp.next.next;
+            temp.prev = node;
+        }
     }
 
 }

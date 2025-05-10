@@ -33,3 +33,34 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Happy coding! 🎉 If you find this repository helpful, don't forget to give it a ⭐ on GitHub. 😊
+
+# Data Structures and Algorithms
+
+This repository contains implementations of various data structures and algorithms in Java. The goal is to learn and practice fundamental concepts of computer science.
+
+## Progress
+
+### Linked Lists
+- **Singly Linked List**
+  - Insertion at the beginning, end, and specific positions.
+  - Deletion from the beginning, end, and specific positions.
+  - Searching for elements.
+  - Reversing the list.
+  - Checking if the list is empty.
+  - Displaying the list.
+
+## Learning Objectives
+- Understand the internal workings of data structures.
+- Implement algorithms with efficiency in mind.
+- Practice problem-solving skills using Java.
+
+## How to Use
+1. Clone the repository.
+2. Navigate to the desired data structure or algorithm.
+3. Run the Java files to test the implementations.
+
+## Future Plans
+- Add doubly linked lists.
+- Implement stacks and queues.
+- Explore tree and graph algorithms.
+- Solve problems using dynamic programming and greedy algorithms.
