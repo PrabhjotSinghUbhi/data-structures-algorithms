@@ -4,19 +4,16 @@ public class Main {
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
 
-        
-        ll.insertAtLast(1);
-        ll.insertAtLast(2);
-        ll.insertAtLast(3);
-        ll.insertAtLast(4);
-        ll.insertAtLast(5);
-        ll.insertAtLast(6);
+        for (int i = 1; i <= 5; i++) {
+            ll.insertAtLast(i);
+        }
+        ll.display();
 
-        ll.deleteAt(2);
-        ll.deleteAt(2);
-        ll.deleteAt(2);
-       
+        ll.reverse();
+        ll.display();
 
+        ll.reverse();
         ll.display();
     }
+
 }
