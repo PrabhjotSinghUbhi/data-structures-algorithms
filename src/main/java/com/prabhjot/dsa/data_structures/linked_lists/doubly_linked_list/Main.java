@@ -14,11 +14,10 @@ public class Main {
 
         dl.insertAt(69, 3);
 
-        dl.deleteAtFirst(); // Test deletion at the beginning
-        dl.deleteAtLast();  // Test deletion at the end
+        
         dl.deleteAt(2);     // Test deletion at a specific position
 
-        dl.reverse();       // Test reversing the list
+      // Test reversing the list
 
         dl.display();       // Display the final state of the list
 
