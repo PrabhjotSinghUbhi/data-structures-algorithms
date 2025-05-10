@@ -21,5 +21,11 @@ public class Main {
         dl.reverse();       // Test reversing the list
 
         dl.display();       // Display the final state of the list
+
+        System.out.println("Finding 19: " + dl.find(19)); // Test find method
+        System.out.println("Finding 100: " + dl.find(100)); // Test find method
+        System.out.println("Finding 7: " + dl.find(7)); // Test find method
+
+        System.out.println("Size of the list: " + dl.getSize()); // Test getSize method
     }
 }

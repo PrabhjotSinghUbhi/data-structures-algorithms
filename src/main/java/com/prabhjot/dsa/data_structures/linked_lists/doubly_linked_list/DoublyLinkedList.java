@@ -100,4 +100,82 @@ public class DoublyLinkedList {
         }
     }
 
+    public int deleteFirst() {
+        if (head == null) {
+            throw new IllegalStateException("List is empty");
+        }
+
+        int val = head.val;
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+
+        size--;
+        return val;
+    }
+
+    public int deleteLast() {
+        if (tail == null) {
+            throw new IllegalStateException("List is empty");
+        }
+
+        int val = tail.val;
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
+
+        size--;
+        return val;
+    }
+
+    public int deleteAt(int pos) {
+        if (pos < 0 || pos >= size) {
+            throw new IndexOutOfBoundsException("Invalid position");
+        }
+
+        if (pos == 0) {
+            return deleteFirst();
+        } else if (pos == size - 1) {
+            return deleteLast();
+        } else {
+            Node temp = head;
+            for (int i = 0; i < pos; i++) {
+                temp = temp.next;
+            }
+
+            int val = temp.val;
+
+            temp.prev.next = temp.next;
+            temp.next.prev = temp.prev;
+
+            size--;
+            return val;
+        }
+    }
+
+    public boolean find(int val) {
+        Node temp = head;
+
+        while (temp != null) {
+            if (temp.val == val) {
+                return true;
+            }
+            temp = temp.next;
+        }
+
+        return false;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
 }
