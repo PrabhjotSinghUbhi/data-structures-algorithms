@@ -11,23 +11,16 @@ package com.prabhjot.dsa.algorithms.sorting.bubble_sort;
 public class BubbleSort {
 
     /**
-     * Sorts an array of integers using the Bubble Sort algorithm.
+     * Sorts an array of integers using an optimized Bubble Sort algorithm.
      * 
-     * @param arr The array of integers to be sorted.
-     * @return The sorted array.
-     * 
-     * How it works:
-     * - We iterate through the array multiple times.
-     * - During each pass, we compare adjacent elements.
-     * - If the current element is greater than the next one, we swap them.
-     * - The largest unsorted element "sinks" to its correct position at the end of the array.
-     * 
-     * Note: This algorithm has a time complexity of O(n^2) in the worst case,
-     * so it's not the most efficient for large datasets. But it's great for learning!
+     * Optimization:
+     * - A flag is used to check if any swaps were made during a pass.
+     * - If no swaps are made, the array is already sorted, and we can exit early.
      */
     public int[] sort(int[] arr) {
         // Outer loop: Controls the number of passes
         for (int i = 0; i < arr.length - 1; i++) {
+            boolean swapped = false; // Flag to track if any swaps were made
             // Inner loop: Compares adjacent elements
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 // If the current element is greater than the next one, swap them
@@ -35,7 +28,12 @@ public class BubbleSort {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                    swapped = true; // A swap was made
                 }
+            }
+            // If no swaps were made, the array is already sorted
+            if (!swapped) {
+                break;
             }
         }
         return arr; // Return the sorted array
