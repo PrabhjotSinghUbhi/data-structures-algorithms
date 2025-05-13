@@ -14,17 +14,6 @@ import java.util.Arrays;
 public class CycleSort {
 
     /**
-     * Main method to test the Cycle Sort algorithm.
-     * 
-     * @param args Command-line arguments (not used here).
-     */
-    public static void main(String[] args) {
-        int[] arr = { 3, 5, 2, 1, 6 }; // Example array to sort
-        System.out.println("Original Array: " + Arrays.toString(arr)); // Print the original array
-        System.out.println("Sorted Array: " + Arrays.toString(sort(arr))); // Print the sorted array
-    }
-
-    /**
      * Sorts an array of integers using the Cycle Sort algorithm. 🚀
      * 
      * @param arr The array of integers to be sorted.
@@ -37,7 +26,7 @@ public class CycleSort {
      * 
      * Note: This algorithm assumes that the array contains integers in the range [1, n], where n is the size of the array.
      */
-    private static int[] sort(int[] arr) {
+    public int[] sort(int[] arr) {
         int i = 0;
         // Loop through the array to place each element at its correct position
         while (i < arr.length) {
