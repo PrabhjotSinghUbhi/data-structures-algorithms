@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.algorithms.sorting.cycle_sort;
+package com.prabhjot.dsa.algorithms.sorting.cycle_sort.leetcode_questions;
 
 /*
  * leetcode 645.
