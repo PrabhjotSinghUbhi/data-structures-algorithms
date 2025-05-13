@@ -5,5 +5,8 @@
         "markdown": false,
         "scminput": false
     },
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "cSpell.words": [
+        "Leetcode"
+    ]
 }

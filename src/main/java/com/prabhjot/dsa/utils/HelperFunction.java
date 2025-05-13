@@ -1,7 +1,9 @@
 package com.prabhjot.dsa.utils;
 
-public class HelperFunction {
-    public static void main(String[] args) {
-        
+interface  HelperFunction {
+    public static void swap(int[] arr, int first, int second) {
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
     }
 }
