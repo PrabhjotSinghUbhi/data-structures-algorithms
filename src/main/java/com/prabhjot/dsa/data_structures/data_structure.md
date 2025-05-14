@@ -77,7 +77,56 @@ dl.display(); // Output: HEAD <-> 20 <-> 15 <-> 10 <-> TAIL
 
 ---
 
-### 🔗 Circular Linked List
+## 🧵 Strings
+Strings in Java are sequences of characters and are one of the most commonly used data types. They are immutable, meaning once created, their value cannot be changed. This immutability makes them secure and efficient for memory management.
+
+### 🌟 Features Explained
+- **Immutability**: Strings cannot be modified after creation. Any operation like concatenation or substring creates a new string.
+- **String Pool**: A special memory area where string literals are stored to optimize memory usage.
+- **Interning**: Moving strings into the String Pool for reuse.
+- **Common Operations**:
+  - Concatenation (`concat`)
+  - Substring (`substring`)
+  - Equality checks (`equals`, `==`)
+
+### 📝 Example
+```java
+String str1 = "Hello";
+String str2 = str1.concat(" World");
+System.out.println(str1); // Output: Hello
+System.out.println(str2); // Output: Hello World
+System.out.println(str1 == str2); // Output: false
+```
+
+---
+
+## 🛠️ StringBuilder
+StringBuilder is a mutable alternative to Strings, allowing efficient modifications without creating new objects. It is ideal for scenarios where multiple string operations are required.
+
+### 🌟 Features Explained
+- **Mutability**: StringBuilder allows in-place modifications like appending, deleting, and replacing characters.
+- **Efficiency**: Faster than Strings for operations like concatenation.
+- **Common Operations**:
+  - Append (`append`)
+  - Delete (`delete`)
+  - Replace (`replace`)
+  - Insert (`insert`)
+  - Reverse (`reverse`)
+
+### 📝 Example
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb); // Output: Hello World
+sb.delete(5, 11);
+System.out.println(sb); // Output: Hello
+sb.reverse();
+System.out.println(sb); // Output: olleH
+```
+
+---
+
+## 🔗 Circular Linked List
 A **Circular Linked List** is a linear data structure where the last node points back to the first node, forming a circle. This allows continuous traversal of the list.
 
 #### 🌟 Features Implemented
