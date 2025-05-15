@@ -8,5 +8,8 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "cSpell.words": [
         "Leetcode"
-    ]
+    ],
+    "java.debug.settings.showHex": false,
+    "java.debug.settings.showQualifiedNames": false,
+    "java.debug.settings.showStaticVariables": true
 }
