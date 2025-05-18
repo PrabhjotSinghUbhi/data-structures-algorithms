@@ -11,6 +11,9 @@ public class MagicNumber {
         int n = 9; // Example input
         int result = findMagicNumber(n);
         System.out.println(result);
+
+        String alpha = "Prabhjot Singh";
+        System.out.println(alpha.length());
     }
 
     /**
