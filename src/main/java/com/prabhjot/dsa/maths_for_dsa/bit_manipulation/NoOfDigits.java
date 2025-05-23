@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.maths_for_dsa.bitwise_operators;
+package com.prabhjot.dsa.maths_for_dsa.bit_manipulation;
 
 public class NoOfDigits {
     public static void main(String[] args) {

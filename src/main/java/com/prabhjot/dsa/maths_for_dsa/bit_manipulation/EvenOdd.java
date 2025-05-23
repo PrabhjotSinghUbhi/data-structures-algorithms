@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.maths_for_dsa.bitwise_operators;
+package com.prabhjot.dsa.maths_for_dsa.bit_manipulation;
 
 /**
  * This class demonstrates how to check if a number is even or odd using bitwise operators.
