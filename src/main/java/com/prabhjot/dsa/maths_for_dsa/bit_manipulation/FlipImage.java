@@ -19,7 +19,6 @@ public class FlipImage {
             System.out.println(Arrays.toString(i));
         }
 
-        System.out.println(pow(2, 1));
     }
 
     public static int[] flipInvertArray(int[] arr) {
@@ -39,25 +38,5 @@ public class FlipImage {
         }
 
         return arr;
-    }
-
-    static double pow(double x, int n) {
-        if (n > 0) {
-            int pow = 0;
-            double ans = 1d;
-            while (pow != n) {
-                ans = ans * x;
-                pow++;
-            }
-            return ans;
-        } else {
-            int pow = 0;
-            double ans = 1d;
-            while (pow != n) {
-                ans = ans * x;
-                pow++;
-            }
-            return ans;
-        }
     }
 }
