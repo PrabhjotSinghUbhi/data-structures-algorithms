@@ -2,7 +2,7 @@ package com.prabhjot.dsa.maths_for_dsa.prime_numbers;
 
 public class PrimeNumbers {
     public static void main(String[] args) {
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 40; i++) {
             if (isPrime(i)) {
                 System.out.printf("%d ",i);
             }
