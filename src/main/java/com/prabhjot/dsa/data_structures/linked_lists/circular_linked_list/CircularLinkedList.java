@@ -1,21 +1,6 @@
 package com.prabhjot.dsa.data_structures.linked_lists.circular_linked_list;
 
 public class CircularLinkedList {
-    private class Node {
-        private int val;
-        private Node next;
-
-        public Node(int val) {
-            this.val = val;
-            this.next = null;
-        }
-
-        public Node(int val, Node next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     private Node head;
     private Node tail;
 
@@ -120,5 +105,20 @@ public class CircularLinkedList {
         } while (temp != head); // Loop until we circle back to the head
 
         return size;
+    }
+
+    private static class Node {
+        private final int val;
+        private Node next;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+        }
+
+        public Node(int val, Node next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 }
