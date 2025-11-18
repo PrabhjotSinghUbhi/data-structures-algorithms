@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.recursion;
+package com.prabhjot.dsa.algorithms.recursion;
 
 /*
  & What is recursion?

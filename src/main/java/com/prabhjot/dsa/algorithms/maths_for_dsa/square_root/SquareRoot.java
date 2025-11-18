@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.maths_for_dsa.square_root;
+package com.prabhjot.dsa.algorithms.maths_for_dsa.square_root;
 
 public class SquareRoot {
     public static void main(String[] args) {

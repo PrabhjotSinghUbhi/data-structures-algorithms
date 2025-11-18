@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.maths_for_dsa.bit_manipulation;
+package com.prabhjot.dsa.algorithms.maths_for_dsa.bit_manipulation;
 
 /**
  * This class demonstrates how to find the unique element in an array

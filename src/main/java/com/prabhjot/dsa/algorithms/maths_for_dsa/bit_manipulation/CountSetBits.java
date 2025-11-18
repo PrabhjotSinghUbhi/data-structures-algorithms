@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.maths_for_dsa.bit_manipulation;
+package com.prabhjot.dsa.algorithms.maths_for_dsa.bit_manipulation;
 
 public class CountSetBits {
     public static void main(String[] args) {

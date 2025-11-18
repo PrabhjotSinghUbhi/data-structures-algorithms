@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.maths_for_dsa.prime_numbers;
+package com.prabhjot.dsa.algorithms.maths_for_dsa.prime_numbers;
 
 public class PrimeNumbers {
     public static void main(String[] args) {

@@ -9,31 +9,13 @@ import java.util.NoSuchElementException;
 public class LinkedList {
 
     private static final String DELETED_MESSAGE = " DELETED: ";
-
-    /**
-     * Inner class representing a node in the linked list.
-     */
-    class Node {
-        private int val; // Value stored in the node
-        private Node next; // Reference to the next node
-
-        Node(int val) {
-            this.val = val;
-        }
-
-        Node(int val, Node next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     private Node head; // Reference to the first node in the list
     private Node tail; // Reference to the last node in the list
     private int size; // Number of elements in the list
 
     /**
      * Inserts a new node with the given value at the beginning of the list.
-     * 
+     *
      * @param val The value to insert.
      */
     public void insertAtFirst(int val) {
@@ -70,7 +52,7 @@ public class LinkedList {
 
     /**
      * Returns the size of the linked list.
-     * 
+     *
      * @return The number of elements in the list.
      */
     public int size() {
@@ -79,7 +61,7 @@ public class LinkedList {
 
     /**
      * Inserts a new node with the given value at the end of the list.
-     * 
+     *
      * @param val The value to insert.
      */
     public void insertAtLast(int val) {
@@ -98,7 +80,7 @@ public class LinkedList {
 
     /**
      * Inserts a new node with the given value at the specified position.
-     * 
+     *
      * @param pos The position to insert the value at (0-based index).
      * @param val The value to insert.
      * @throws IndexOutOfBoundsException If the position is invalid.
@@ -120,7 +102,7 @@ public class LinkedList {
 
     /**
      * Retrieves the node at the specified index.
-     * 
+     *
      * @param index The index of the node to retrieve (0-based index).
      * @return The node at the specified index.
      * @throws IndexOutOfBoundsException If the index is invalid.
@@ -139,7 +121,7 @@ public class LinkedList {
 
     /**
      * Deletes the first node in the list and returns its value.
-     * 
+     *
      * @return The value of the deleted node.
      * @throws NoSuchElementException If the list is empty.
      */
@@ -163,7 +145,7 @@ public class LinkedList {
 
     /**
      * Deletes the last node in the list and returns its value.
-     * 
+     *
      * @return The value of the deleted node.
      * @throws NoSuchElementException If the list is empty.
      */
@@ -183,7 +165,7 @@ public class LinkedList {
 
     /**
      * Deletes the node at the specified index and returns its value.
-     * 
+     *
      * @param index The index of the node to delete (0-based index).
      * @return The value of the deleted node.
      * @throws NoSuchElementException If the index is invalid.
@@ -207,7 +189,7 @@ public class LinkedList {
 
     /**
      * Finds the index of the first occurrence of the given value.
-     * 
+     *
      * @param val The value to search for.
      * @return The index of the value, or -1 if the value is not found.
      */
@@ -243,10 +225,27 @@ public class LinkedList {
 
     /**
      * Checks if the linked list is empty.
-     * 
+     *
      * @return True if the list is empty, false otherwise.
      */
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    /**
+     * Inner class representing a node in the linked list.
+     */
+    class Node {
+        private int val; // Value stored in the node
+        private Node next; // Reference to the next node
+
+        Node(int val) {
+            this.val = val;
+        }
+
+        Node(int val, Node next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 }

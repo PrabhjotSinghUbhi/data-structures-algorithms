@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.maths_for_dsa.prime_numbers.sieve_of_eratosthenes;
+package com.prabhjot.dsa.algorithms.maths_for_dsa.prime_numbers.sieve_of_eratosthenes;
 
 public class SieveOfEratosthenes {
     public static void main(String[] args) {
