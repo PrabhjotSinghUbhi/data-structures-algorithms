@@ -1,6 +1,6 @@
-package com.prabhjot.dsa.data_structures.Stacks.DynamicStack;
+package com.prabhjot.dsa.data_structures.stacks.dynamic_stack;
 
-import com.prabhjot.dsa.data_structures.Stacks.CustomStack.CustomStack;
+import com.prabhjot.dsa.data_structures.stacks.custom_stack.CustomStack;
 
 public class DynamicStack extends CustomStack {
 

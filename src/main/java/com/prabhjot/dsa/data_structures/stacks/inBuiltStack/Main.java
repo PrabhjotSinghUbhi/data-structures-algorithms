@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.data_structures.Stacks.inBuiltStack;
+package com.prabhjot.dsa.data_structures.stacks.inBuiltStack;
 
 import java.util.Stack;
 

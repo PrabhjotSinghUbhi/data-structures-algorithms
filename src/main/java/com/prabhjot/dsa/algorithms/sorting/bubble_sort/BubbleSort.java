@@ -6,7 +6,7 @@ package com.prabhjot.dsa.algorithms.sorting.bubble_sort;
  * compares adjacent elements, and swaps them if they are in the wrong order.
  * 
  * Fun Fact: It's called "Bubble Sort" because the smaller elements "bubble" to the top
- * (or front) of the array, just like bubbles in water!
+ * (or end) of the array, just like bubbles in water!
  */
 public class BubbleSort {
 

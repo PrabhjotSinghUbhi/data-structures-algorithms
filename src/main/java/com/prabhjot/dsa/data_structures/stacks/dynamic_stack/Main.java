@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.data_structures.Stacks.DynamicStack;
+package com.prabhjot.dsa.data_structures.stacks.dynamic_stack;
 
 public class Main {
     public static void main(String[] args) {

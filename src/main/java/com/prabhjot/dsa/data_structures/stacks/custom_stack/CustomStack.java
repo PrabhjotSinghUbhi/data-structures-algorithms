@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.data_structures.Stacks.CustomStack;
+package com.prabhjot.dsa.data_structures.stacks.custom_stack;
 
 import java.util.EmptyStackException;
 

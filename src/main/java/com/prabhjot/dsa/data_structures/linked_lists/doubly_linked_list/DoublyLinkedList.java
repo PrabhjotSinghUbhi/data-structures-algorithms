@@ -296,6 +296,40 @@ public class DoublyLinkedList {
     }
 
     /**
+     * Reversing the linked list in-place.
+     * idea - swap the links no the elements.
+     */
+    public void reverse() {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Node curr = head;
+        Node last = null;
+        while (curr != null) {
+            last = curr.prev;
+
+            curr.prev = curr.next;
+            curr.next = last;
+
+            curr = curr.prev;
+        }
+        head = last.prev;
+    }
+
+    /**
+     * Swaps the values of the 2 nodes.
+     *
+     * @param first  - the first node.
+     * @param second - the second node.
+     */
+    private void swap(Node first, Node second) {
+        int tmp = first.val;
+        first.val = second.val;
+        second.val = tmp;
+    }
+
+    /**
      * Node represents a single element inside the doubly linked list.
      * It stores an integer value and pointers to the next and previous nodes.
      */
