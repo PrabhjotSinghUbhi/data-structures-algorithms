@@ -1,4 +1,4 @@
-package com.prabhjot.input_output.InputStreamReader;
+package com.prabhjot.input_output.input.input_stream_reader;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

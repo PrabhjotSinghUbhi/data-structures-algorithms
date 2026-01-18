@@ -1,4 +1,4 @@
-package com.prabhjot.input_output.scanner;
+package com.prabhjot.input_output.input.scanner;
 
 import java.util.Scanner;
 

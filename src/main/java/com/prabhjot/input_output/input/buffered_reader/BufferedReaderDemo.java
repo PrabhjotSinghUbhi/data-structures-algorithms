@@ -1,4 +1,4 @@
-package com.prabhjot.input_output.BufferedReader;
+package com.prabhjot.input_output.input.buffered_reader;
 
 import java.io.BufferedReader;
 import java.io.IOException;

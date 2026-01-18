@@ -11,7 +11,7 @@ public class Streams {
          * Byte Streams
          * - raw bytes
          * - Classes that end with Stream
-         * -- e.g. InputStream, FileInputStream, BufferedInputStream
+         * -- e.g. InputStream, FileInputStream, BufferedInputStreamDemo
          */
         /**
          * Character Stream
