@@ -14,7 +14,7 @@ public class BufferedInputStreamDemo {
         //no string
         //no overhead
         //you have to read bytes and parse manually.
-        //This is what your FastScanner uses internally.
+        //This is what your FastScannerDemo uses internally.
         byte[] re = bis.readNBytes(2);
         System.out.println(re);
     }

@@ -1,6 +1,6 @@
+package com.prabhjot.questions.cses.number_spiral;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 class FastScanner {
     private final byte[] buffer = new byte[1 << 16];
@@ -123,19 +123,25 @@ class FastScanner {
 
 public class Sol {
     public static void main(String[] args) throws IOException {
-        FastScanner fs = new FastScanner();
-        String s = fs.nextLine();
-
-        int mx = 0;
-        int i = 0;
-        for (int j = 0; j < s.length(); j++) {
-            char ci = s.charAt(i);
-            char cj = s.charAt(j);
-            if (ci == cj)
-                mx = Math.max(mx, j - i + 1);
-            else
-                i = j;
+        for (int i = 0; i < 100; i++) {
+            for (int j = 0; j < 100; j++) {
+                temp(i, j);
+            }
         }
-        System.out.println(mx);
+        temp(1, 5);
+    }
+
+    private static void temp(long x, long y) throws IOException {
+//        FastScanner fs = new FastScanner();
+        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+//        n = fs.nextInt();
+
+//            x = fs.nextLong();
+//            y = fs.nextLong();
+
+        long k = Math.max(x, y);
+        out.println(k * k - (Math.abs((k + 1) - (x + y))));
+        out.flush();
+
     }
 }
