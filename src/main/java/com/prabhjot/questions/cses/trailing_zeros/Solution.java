@@ -1,4 +1,4 @@
-package com.prabhjot.questions.cses.number_spiral;
+package com.prabhjot.questions.cses.trailing_zeros;
 
 import java.io.*;
 
@@ -121,37 +121,18 @@ class FastScanner {
 
 }
 
-public class Sol {
+
+public class Solution {
     public static void main(String[] args) throws IOException {
         FastScanner fs = new FastScanner();
         PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-        int n;
-        long y, x;
-        n = fs.nextInt();
-        for (int i = 0; i < n; i++) {
-            x = fs.nextLong();//row
-            y = fs.nextLong();//col
-
-            long layer = Math.max(x, y);//layer
-
-            //if the layer is even then the index of the largest number in that layer would be k,1 otherwise it would be 1,k
-
-            long diff = Math.abs((layer + 1) - (x + y));
-            long result = layer * layer - diff;
-
-            if (layer % 2 == 0 && x != layer) {
-                diff = Math.abs((layer + layer) - (x + y));
-                result = layer * layer - (layer - 1) - diff;
-            }
-
-            if (layer % 2 != 0 && x == layer) {
-                diff = Math.abs((layer + layer) - (x + y));
-                result = layer * layer - (layer - 1) - diff;
-            }
-
-            out.println(result);
+        long n = fs.nextLong();
+        long zeros = 0;
+        while (n != 0) {
+            zeros += n / 5;
+            n = n / 5;
         }
+        out.println(zeros);
         out.flush();
     }
 }
-
