@@ -1,4 +1,4 @@
-package com.prabhjot.classes.stack_implementation_using_linked_list;
+package com.prabhjot.classes.stack.stack_implementation_using_linked_list;
 
 public class Main {
     public static void main(String[] args) {

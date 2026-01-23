@@ -1,4 +1,4 @@
-package com.prabhjot.classes.stack_implementation_using_array;
+package com.prabhjot.classes.stack.stack_implementation_using_array;
 
 public class Main {
     public static void main(String[] args) {
