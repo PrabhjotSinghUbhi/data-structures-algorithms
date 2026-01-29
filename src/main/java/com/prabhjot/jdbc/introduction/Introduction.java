@@ -1,13 +1,12 @@
 package com.prabhjot.jdbc.introduction;
 
-import java.sql.*;
 import java.util.Scanner;
 
 public class Introduction {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ManageStudentDB ms = new ManageStudentDB();
+        StudentDAO ms = new StudentDAO();
         boolean playing = true;
         while (playing) {
             int input;
@@ -36,7 +35,8 @@ public class Introduction {
                     System.out.print("Enter Section: ");
                     String section = sc.nextLine();
 
-                    ms.addStudent(name, section, marks);
+                    StudentPOJO s = new StudentPOJO(name, marks, section);
+                    ms.addStudent(s);
                     break;
 
                 case 2:
@@ -85,113 +85,5 @@ public class Introduction {
             }
         }
 
-    }
-}
-
-class ManageStudentDB {
-
-    private static String url = System.getenv("DB_URL");
-    private static String password = System.getenv("DB_PASSWORD");
-    private static String user = System.getenv("DB_USER");
-    private static String addStatement = "INSERT INTO students(name,section,marks) VALUES (?,?,?)";
-    private static String selectStudents = "SELECT * FROM students";
-    private static String updateStudentName = "UPDATE students SET name=? WHERE id=?";
-    private static String updateStudentMarks = "UPDATE students SET marks=? WHERE id=?";
-    private static String deleteStudent = "DELETE FROM students WHERE id=?";
-    private static String viewWithCondition = "SELECT * FROM students WHERE id=?";
-
-    public void selectAllStudents() {
-        try (
-                Connection con = DriverManager.getConnection(url, user, password);
-                Statement st = con.createStatement();
-                ResultSet re = st.executeQuery(selectStudents)
-        ) {
-
-            while (re.next()) {
-                System.out.println(STR."\{re.getInt("id")} \{re.getString("name")} \{re.getInt("marks")}");
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void addStudent(String name, String section, int marks) {
-        try (
-                Connection con = DriverManager.getConnection(url, user, password);
-                PreparedStatement ps = con.prepareStatement(addStatement)
-        ) {
-            ps.setString(1, name);
-            ps.setString(2, section);
-            ps.setInt(3, marks);
-
-            ps.executeUpdate();
-            System.out.println("Student added Successfully");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void setUpdateStudentName(int id, String name) {
-        try (
-                Connection con = DriverManager.getConnection(url, user, password);
-                PreparedStatement ps = con.prepareStatement(updateStudentName)
-        ) {
-            ps.setInt(2, id);
-            ps.setString(1, name);
-
-            ps.executeUpdate();
-            System.out.println("Updated Successfully.");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void setUpdateStudentMarks(int id, int marks) {
-        try (
-                Connection con = DriverManager.getConnection(url, user, password);
-                PreparedStatement ps = con.prepareStatement(updateStudentMarks)
-        ) {
-            ps.setInt(2, id);
-            ps.setInt(1, marks);
-
-            ps.executeUpdate();
-            System.out.println("Updated Successfully.");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void deleteStudent(int id) {
-        try (
-                Connection con = DriverManager.getConnection(url, user, password);
-                PreparedStatement ps = con.prepareStatement(deleteStudent);
-        ) {
-
-            ps.setInt(1, id);
-            ps.executeUpdate();
-            System.out.println("Deleted Successfully.");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void selectStudentById(int id) {
-        try (
-                Connection con = DriverManager.getConnection(url, user, password);
-                PreparedStatement ps = con.prepareStatement(viewWithCondition);
-        ) {
-            ps.setInt(1, id);
-            ResultSet rs = ps.executeQuery();
-
-            while (rs.next()) {
-                System.out.println(
-                        STR."\{rs.getInt("id")} \{rs.getString("name")} \{rs.getString("Section")} \{rs.getInt("marks")}"
-                );
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }
