@@ -1,9 +1,9 @@
 package com.prabhjot.jdbc.introduction;
 
 public class StudentPOJO {
-    String name;
-    String section;
-    int marks;
+    private String name;
+    private String section;
+    private int marks;
 
     public StudentPOJO(String name, int marks, String section) {
         this.name = name;

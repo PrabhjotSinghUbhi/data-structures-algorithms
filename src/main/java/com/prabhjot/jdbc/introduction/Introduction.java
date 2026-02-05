@@ -6,7 +6,7 @@ public class Introduction {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        StudentDAO ms = new StudentDAO();
+        StudentDAO ms = new StudentDAOImp();
         boolean playing = true;
         while (playing) {
             int input;
@@ -50,7 +50,7 @@ public class Introduction {
                     System.out.print("\nEnter new name: ");
                     String newName = sc.nextLine();
 
-                    ms.setUpdateStudentName(id, newName);
+                    ms.updateStudentName(id, newName);
                     break;
 
                 case 4:
@@ -60,7 +60,7 @@ public class Introduction {
                     System.out.print("\nEnter new Marks: ");
                     int newMarks = Integer.parseInt(sc.nextLine());
 
-                    ms.setUpdateStudentMarks(id2, newMarks);
+                    ms.updateStudentMarks(id2, newMarks);
                     break;
 
                 case 5:
