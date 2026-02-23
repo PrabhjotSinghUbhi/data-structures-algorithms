@@ -1,6 +1,8 @@
 package com.prabhjot.dsa.algorithms.searching.binary_search;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.prabhjot.dsa.algorithms.searching.binary_search.concept.BinarySearch;
 import org.junit.jupiter.api.Test;
 
 class BinarySearchTest {

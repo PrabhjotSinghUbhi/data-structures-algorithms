@@ -1,6 +1,8 @@
 package com.prabhjot.dsa.algorithms.searching.binary_search;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+import com.prabhjot.dsa.algorithms.searching.binary_search.concept.BinarySearchIn2DSortedByRowAndColumn;
 import org.junit.jupiter.api.Test;
 
 class BinarySearchIn2DTest {

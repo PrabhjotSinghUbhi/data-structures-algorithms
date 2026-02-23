@@ -5,7 +5,7 @@ package com.prabhjot.dsa.algorithms.recursion;
  * -> 
  ? Recursion is a programming technique where a function calls itself directly or indirectly to solve a problem. It is often used to solve problems that can be broken down into smaller, similar sub problems. A recursive function typically has two main components:
 
-    *1. Base Case: The condition under whi2ch the recursion stops. Without a base case, the function would call itself indefinitely, leading to a stack overflow.
+    *1. Base Case: The condition under which the recursion stops. Without a base case, the function would call itself indefinitely, leading to a stack overflow.
 
     *2. Recursive Case: The part of the function where it calls itself to solve a smaller instance of the problem.
  */
