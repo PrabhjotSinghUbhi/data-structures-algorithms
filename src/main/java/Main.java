@@ -1,67 +1,15 @@
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import static java.lang.Math.sqrt;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         FastScanner fs = new FastScanner();
         StringBuilder sb = new StringBuilder();
-
-        int t = fs.nextInt();
-        while (t-- > 0) {
-            int n = fs.nextInt();
-            long h = fs.nextLong();
-            long k = fs.nextLong();
-            long[] a = new long[n];
-            for (int i = 0; i < n; i++) a[i] = fs.nextLong();
-
-            long ts = 0;
-            long[] pf = new long[n + 1];
-            for (int i = 0; i < n; i++) {
-                ts += a[i];
-                pf[i + 1] = pf[i] + a[i];
-            }
-
-            long[] ms = new long[n + 1];
-            ms[n] = Long.MIN_VALUE;
-            for (int i = n - 1; i >= 0; i--) {
-                ms[i] = Math.max(a[i], ms[i + 1]);
-            }
-
-            long[] minP = new long[n + 1];
-            minP[0] = Long.MAX_VALUE;
-            for (int i = 1; i <= n; i++) {
-                minP[i] = Math.min(minP[i - 1], a[i - 1]);
-            }
-
-            long lo = 1, hi = (long) 2e18;
-            while (lo < hi) {
-                long mid = (lo + hi) / 2;
-                if (canKill(mid, n, k, h, ts, pf, ms, minP)) {
-                    hi = mid;
-                } else {
-                    lo = mid + 1;
-                }
-            }
-
-            sb.append(lo).append('\n');
-        }
-
-        System.out.print(sb);
+        PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+        int n = 4;
+        System.out.println(sqrt(n));
     }
 
-    static boolean canKill(long T, int n, long k, long h,
-                           long ts, long[] p,
-                           long[] mxS, long[] mnP) {
-        long c = T / (n + k);
-        long rem = T - c * (n + k);
-        int extra = (int) Math.min(n, rem);
-        long dmg = c * ts + p[extra];
-        if (extra > 0 && extra < n) {
-            long benefit = mxS[extra] - mnP[extra];
-            if (benefit > 0) dmg += benefit;
-        }
-        return dmg >= h;
-    }
 }
 
 class FastScanner {
