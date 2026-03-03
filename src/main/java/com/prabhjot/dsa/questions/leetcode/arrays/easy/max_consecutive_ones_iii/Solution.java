@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.questions.leetcode.arrays.max_consecutive_ones_iii;
+package com.prabhjot.dsa.questions.leetcode.arrays.easy.max_consecutive_ones_iii;
 
 /**
  * leetcode - 1004

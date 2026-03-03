@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.questions.leetcode.arrays.maximum_subarray_sum_length;
+package com.prabhjot.dsa.questions.leetcode.arrays.easy.maximum_subarray_sum_length;
 
 public class Code {
     public static void main(String[] args) {

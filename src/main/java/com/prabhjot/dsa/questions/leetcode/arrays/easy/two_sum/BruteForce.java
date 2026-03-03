@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.questions.leetcode.arrays.two_sum;
+package com.prabhjot.dsa.questions.leetcode.arrays.easy.two_sum;
 
 /**
  * Leetcode 1.

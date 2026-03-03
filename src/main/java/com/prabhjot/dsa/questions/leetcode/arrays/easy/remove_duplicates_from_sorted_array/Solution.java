@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.questions.leetcode.arrays.remove_duplicates_from_sorted_array;
+package com.prabhjot.dsa.questions.leetcode.arrays.easy.remove_duplicates_from_sorted_array;
 
 import java.util.Arrays;
 
