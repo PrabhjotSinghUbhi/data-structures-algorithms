@@ -1,12 +1,12 @@
-package com.prabhjot.java.core.file_handling.serialization_and_deserialization.serializer;
+package com.prabhjot.java.core.file_handling.serialization_and_deserialization;
 
 import java.io.Serializable;
 
 public class User implements Serializable {
-    String name;
-    String marks;
-    String location;
-    int id;
+    public String name;
+    public String marks;
+    public String location;
+    public int id;
 
     public User(String name, String marks, String location, int id) {
         this.name = name;

@@ -25,7 +25,7 @@ public class FastScanner {
         return buffer[ptr++];
     }
 
-    int nextInt() throws IOException {
+    public int nextInt() throws IOException {
         int c;
         do {
             c = readByte();
@@ -45,7 +45,7 @@ public class FastScanner {
         return val * sign;
     }
 
-    long nextLong() throws IOException {
+    public long nextLong() throws IOException {
         int c;
         do {
             c = readByte();

@@ -1,4 +1,4 @@
-package com.prabhjot.dsa.algorithms.recursion;
+package com.prabhjot.dsa.algorithms.recursion.basic;
 
 public class RecursiveBinarySearch {
     public static void main(String[] args) {

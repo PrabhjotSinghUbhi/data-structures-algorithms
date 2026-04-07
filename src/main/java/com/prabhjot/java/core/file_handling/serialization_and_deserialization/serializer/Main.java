@@ -1,4 +1,6 @@
-package com.prabhjot.java.core.file_handling.serialization_and_deserialization;
+package com.prabhjot.java.core.file_handling.serialization_and_deserialization.serializer;
+
+import com.prabhjot.java.core.file_handling.serialization_and_deserialization.User;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
